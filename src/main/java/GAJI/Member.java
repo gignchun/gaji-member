@@ -27,16 +27,6 @@ public class Member {
         Left left = new Left();
         BeanUtils.copyProperties(this, left);
         left.publishAfterCommit();
-
-        //Following code causes dependency to external APIs
-        // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
-
-        GAJI.external.Product product = new GAJI.external.Product();
-        // mappings goes here
-        MemberApplication.applicationContext.getBean(GAJI.external.ProductService.class)
-            .delete(product);
-
-
     }
 
 

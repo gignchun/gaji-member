@@ -1,0 +1,10 @@
+GAJI/PolicyHandler.class
+GAJI/MemberApplication.class
+GAJI/MemberRepository.class
+GAJI/config/kafka/KafkaProcessor.class
+GAJI/AbstractEvent$1.class
+GAJI/MemberController.class
+GAJI/AbstractEvent.class
+GAJI/Member.class
+GAJI/Left.class
+GAJI/Joined.class
