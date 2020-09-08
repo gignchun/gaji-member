@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.Date;
 
-@FeignClient(name="Product", url="http://Product:8080")
+//@FeignClient(name="Product", url="http://Product:8080")
+@FeignClient(name="Product", url="${api.url.product}")
 public interface ProductService {
 
     @RequestMapping(method= RequestMethod.DELETE, path="/products")

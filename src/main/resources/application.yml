@@ -37,6 +37,11 @@ logging:
     org.springframework.cloud: debug
 server:
   port: 8083
+
+
+api:
+  url:
+    product: http://localhost:8082
 ---
 
 spring:
@@ -62,3 +67,7 @@ spring:
         event-out:
           destination: GAJI
           contentType: application/json
+
+api:
+  url:
+    product: http://product:8080
